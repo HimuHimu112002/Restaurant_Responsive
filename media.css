@@ -1,0 +1,95 @@
+@media(min-width:320px) and (max-width:575px){
+    .navbar-collapse {
+        text-align: center;
+    }
+    .banner_content h1 {
+        font-size: 35px;
+    }
+    .banner_content_supper {
+        padding-bottom: 20px;
+    }
+    .about {
+        text-align: center;
+    }
+    .about_img {
+        display: none;
+    }
+    .card_section h1 {
+        font-size: 30px;
+    }
+    .menu h3 {
+        font-size: 15px;
+    }
+    .menu h3 {
+        font-size: 15px;
+    }
+    .organize_heading {
+        margin: auto;
+    }
+    .card_body{
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
+@media(min-width:320px) and (max-width:991px){
+    .organize_about h4 {
+        text-align: center;
+    }
+    
+    .form_section h3 {
+        text-align: center;
+    }
+
+    .form_section h1 {
+        text-align: center;
+    }
+    .form_section {
+        text-align: center;
+    }
+    .photo_content h3, .manager h3 {
+        text-align: center;
+    }
+    .photo_content h1, .manager h1{
+        text-align: center;
+    }
+    .chefs h3 {
+        text-align: center;
+    }
+    .chefs h1 {
+        text-align: center;
+    }
+    .chefs_name {
+        top: 20%;     
+    }
+    .first h2 {
+        font-size: 17px;
+    }
+}
+@media(min-width:576px) and (max-width:991px){
+    .banner_content_supper {
+        padding-bottom: 20px;
+    }
+    .organize_heading {
+        margin: auto;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .navbar-collapse {
+        text-align: center;
+    }
+    .banner_content h1 {
+        font-size: 40px;
+    }
+    .about_img {
+        display: none;
+    }
+    .about {
+        text-align: center;
+    }
+    .card_section h1 {
+        font-size: 30px;
+    }
+    .menu h3 {
+        font-size: 20px;
+    }
+}
