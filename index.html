@@ -17,9 +17,13 @@
     <link rel="stylesheet" href="Aos/aos.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
   </head>
   <body>
+    <div class="topbtn" id="topbtn">
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>
       <!-- start of header part -->
     <header>
         
@@ -72,7 +76,7 @@
                         </div>
                     </nav>
                     <div class="banner_content text-center">
-                        <h1>Welcome to <span>Restaurantly</span></h1>
+                        <h1>Welcome to  <span class="animate"></span></h1>
                         <h3>Delivering great food for more than 18 years!</h3>
                         <button class="btn banner_btn_1">Our menu</button>
                         <button class="btn banner_btn_2">Book a table</button>
@@ -92,7 +96,7 @@
         </div>
     </section>                                       
 
-    <section class="about" data-aos="zoom-in">
+    <section class="about">
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-6 about-content-all pt-5">
@@ -116,7 +120,7 @@
 
 
                                         <!-- start of card part -->
-    <section class="card_section py-5" data-aos="zoom-in">
+    <section class="card_section py-5">
         <div class="container">
             <div class="row">
                 <div class="row p-4">
@@ -153,142 +157,152 @@
     </section>                      <!-- end of card part -->
     
                                     <!-- start of menu part  -->
-    <section class="menu py-5" data-aos="zoom-in">
+    <section class="menu py-5">
         <div class="container">
             <div class="row">
                 <h3>MENU............................................................</h3>
                 <h1>Check Our Tasty Menu</h1>
             </div>
 
-            <div class="row pt-3">
-                <div class="col-md-6">
-                    <div class="menu_contant">
-                        <div class="menu_img">
-                            <img src="img/caesar_1.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="menu_text">
-                            <h3>Caesar Selections..................$7.95</h3>
-                            <h4>Lorem, deren, trataro, filede, nerada</h4>
-                        </div>
-                        
-                    </div>
-                </div>
+            <div class="menu_select text-center my-4">
+                <button class="btn mb-2" type="button" data-filter="all">All</button>
+                <button class="btn mb-2" type="button" data-filter="salad">Salad</button>
+                <button class="btn mb-2" type="button" data-filter="grill">Grill</button>
+                <button class="btn mb-2" type="button" data-filter="bread">Bread</button>
+                <button class="btn mb-2" type="button" data-filter="caesar5">Caesar</button>
+                <button class="btn mb-2" type="button" data-filter="cake">Cake</button>
+            </div>
 
-                <div class="col-md-6">
-                    <div class="menu_contant">
-                        <div class="menu_img">
-                            <img src="img/cake_2.jpg" class="img-fluid" alt="">
+            <div class="mix all" data-order="1">
+                <div class="row pt-3">
+                        <div class="col-md-6 mix caesar5" data-order="5">
+                            <div class="menu_contant">
+                                <div class="menu_img">
+                                    <img src="img/caesar_1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="menu_text">
+                                    <h3>Caesar Selections..................$7.95</h3>
+                                    <h4>Lorem, deren, trataro, filede, nerada</h4>
+                                </div>
+                                
+                            </div>
                         </div>
-                        <div class="menu_text">
-                            <h3>Crab Cake....................$8.95</h3>
-                            <h4>A delicate crab cake served on a toasted roll with lettuce and tartar sauce</h4>
+        
+                        <div class="col-md-6 mix caesar5" data-order="5">
+                            <div class="menu_contant">
+                                <div class="menu_img">
+                                    <img src="img/cake_2.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="menu_text">
+                                    <h3>Crab Cake....................$8.95</h3>
+                                    <h4>A delicate crab cake served on a toasted roll with lettuce and tartar sauce</h4>
+                                </div>
+                                
+                            </div>
                         </div>
-                        
+    
+                    <div class="col-md-6 mix grill" data-order="3">
+                        <div class="menu_contant">
+                            <div class="menu_img">
+                                <img src="img/lobster-bisque_4.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="menu_text">
+                                <h3>Lobster Bisque
+                                    .....................$5.95</h3>
+                                <h4>Lorem, deren, trataro, filede, nerada</h4>
+                            </div>
+                            
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="menu_contant">
-                        <div class="menu_img">
-                            <img src="img/lobster-bisque_4.jpg" class="img-fluid" alt="">
+    
+                    <div class="col-md-6 mix cake" data-order="6">
+                        <div class="menu_contant">
+                            <div class="menu_img">
+                                <img src="img/bread-barrel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="menu_text">
+                                <h3>Bread Barrel..................$6.95</h3>
+                                <h4>Lorem, deren, trataro, filede, nerada</h4>
+                            </div>
+                            
                         </div>
-                        <div class="menu_text">
-                            <h3>Lobster Bisque
-                                .....................$5.95</h3>
-                            <h4>Lorem, deren, trataro, filede, nerada</h4>
-                        </div>
-                        
                     </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="menu_contant">
-                        <div class="menu_img">
-                            <img src="img/bread-barrel.jpg" class="img-fluid" alt="">
+    
+                    <div class="col-md-6 mix grill" data-order="3">
+                        <div class="menu_contant">
+                            <div class="menu_img">
+                                <img src="img/tuscan-grilled_9.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="menu_text">
+                                <h3>Tuscan Grilled....................$9.95</h3>
+                                <h4>Grilled chicken with provolone, artichoke hearts, and roasted red pesto</h4>
+                            </div>
+                            
                         </div>
-                        <div class="menu_text">
-                            <h3>Bread Barrel..................$6.95</h3>
-                            <h4>Lorem, deren, trataro, filede, nerada</h4>
-                        </div>
-                        
                     </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="menu_contant">
-                        <div class="menu_img">
-                            <img src="img/tuscan-grilled_9.jpg" class="img-fluid" alt="">
+    
+                    <div class="col-md-6 mix bread" data-order="4">
+                        <div class="menu_contant">
+                            <div class="menu_img">
+                                <img src="img/mozzarella_6.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="menu_text">
+                                <h3>Mozzarella Stick..................$4.95</h3>
+                                <h4>Lorem, deren, trataro, filede, nerada</h4>
+                            </div>
+                            
                         </div>
-                        <div class="menu_text">
-                            <h3>Tuscan Grilled....................$9.95</h3>
-                            <h4>Grilled chicken with provolone, artichoke hearts, and roasted red pesto</h4>
-                        </div>
-                        
                     </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="menu_contant">
-                        <div class="menu_img">
-                            <img src="img/mozzarella_6.jpg" class="img-fluid" alt="">
+    
+                    <div class="col-md-6 mix salad" data-order="2">
+                        <div class="menu_contant">
+                            <div class="menu_img">
+                                <img src="img/greek-salad_3.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="menu_text">
+                                <h3>Greek Salad....................$9.95</h3>
+                                <h4>Fresh spinach, crisp romaine, tomatoes, and Greek olives</h4>
+                            </div>
+                            
                         </div>
-                        <div class="menu_text">
-                            <h3>Mozzarella Stick..................$4.95</h3>
-                            <h4>Lorem, deren, trataro, filede, nerada</h4>
-                        </div>
-                        
                     </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="menu_contant">
-                        <div class="menu_img">
-                            <img src="img/greek-salad_3.jpg" class="img-fluid" alt="">
+    
+                    <div class="col-md-6 mix salad" data-order="2">
+                        <div class="menu_contant">
+                            <div class="menu_img">
+                                <img src="img/spinach-salad_8.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="menu_text">
+                                <h3>Spinach Salad..................$9.95</h3>
+                                <h4>Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</h4>
+                            </div>
+                            
                         </div>
-                        <div class="menu_text">
-                            <h3>Greek Salad....................$9.95</h3>
-                            <h4>Fresh spinach, crisp romaine, tomatoes, and Greek olives</h4>
-                        </div>
-                        
                     </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="menu_contant">
-                        <div class="menu_img">
-                            <img src="img/spinach-salad_8.jpg" class="img-fluid" alt="">
+    
+                    <div class="col-md-6 mix bread" data-order="4">
+                        <div class="menu_contant">
+                            <div class="menu_img">
+                                <img src="img/lobster-roll_5.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="menu_text">
+                                <h3>Lobster Roll....................$12.95</h3>
+                                <h4>Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</h4>
+                            </div>
+                            
                         </div>
-                        <div class="menu_text">
-                            <h3>Spinach Salad..................$9.95</h3>
-                            <h4>Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</h4>
-                        </div>
-                        
                     </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="menu_contant">
-                        <div class="menu_img">
-                            <img src="img/lobster-roll_5.jpg" class="img-fluid" alt="">
+    
+                    <div class="col-md-6 mix caesar5" data-order="5">
+                        <div class="menu_contant">
+                            <div class="menu_img">
+                                <img src="img/caesar_1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="menu_text">
+                                <h3>Caesar Selections...............$7.95</h3>
+                                <h4>Lorem, deren, trataro, filede, nerada</h4>
+                            </div>                           
                         </div>
-                        <div class="menu_text">
-                            <h3>Lobster Roll....................$12.95</h3>
-                            <h4>Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</h4>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="menu_contant">
-                        <div class="menu_img">
-                            <img src="img/caesar_1.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="menu_text">
-                            <h3>Caesar Selections...............$7.95</h3>
-                            <h4>Lorem, deren, trataro, filede, nerada</h4>
-                        </div>
-                        
                     </div>
                 </div>
             </div>
@@ -417,48 +431,64 @@
             <div class="container pt-5">
                 <div class="row photo_content">
                     <h3>GALLERY</h3>
-                    <h1>Some photos from Our Restaurant</h1>
+                    <h1>Some photos from Our Restaurant Popup Gallery</h1>
                 </div>
             </div>
-            <div class="row pt-5">
+            <div class="row pt-5 img-t">
                 <div class="col-md-3">
                     <div class="img_1">
-                        <img src="img/gallery-1.jpg" class="img-fluid" alt="">
+                        <a href="img/gallery-1.jpg" class="image">
+                            <img src="img/gallery-1.jpg" class="img-fluid" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="img_1">
-                        <img src="img/gallery-2.jpg" class="img-fluid" alt="">
+                        <a href="img/gallery-2.jpg" class="image">
+                            <img src="img/gallery-2.jpg" class="img-fluid" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="img_1">
-                        <img src="img/gallery-3.jpg" class="img-fluid" alt="">
+                        <a href="img/gallery-3.jpg" class="image">
+                            <img src="img/gallery-3.jpg" class="img-fluid" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="img_1">
-                        <img src="img/gallery-4.jpg" class="img-fluid" alt="">
+                        <a href="img/gallery-4.jpg" class="image">
+                            <img src="img/gallery-4.jpg" class="img-fluid" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="img_1">
-                        <img src="img/gallery-5.jpg" class="img-fluid" alt="">
+                        <a href="img/gallery-5.jpg" class="image">
+                            <img src="img/gallery-5.jpg" class="img-fluid" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="img_1">
-                        <img src="img/gallery-6.jpg" class="img-fluid" alt="">
+                        <a href="img/gallery-6.jpg" class="image">
+                            <img src="img/gallery-6.jpg" class="img-fluid" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="img_1">
-                        <img src="img/gallery-7.jpg" class="img-fluid" alt="">
+                        <a href="img/gallery-7.jpg" class="image">
+                            <img src="img/gallery-7.jpg" class="img-fluid" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="img_1">
-                        <img src="img/gallery-8.jpg" class="img-fluid" alt="">
+                        <a href="img/gallery-8.jpg" class="image">
+                            <img src="img/gallery-8.jpg" class="img-fluid" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -596,7 +626,7 @@
     </section>                                     <!-- end of contact part -->
 
     <footer>                                     <!-- start of footer part -->
-        <div class="container" data-aos="zoom-in">
+        <div class="container">
             <div class="row">
 
                <div class="col-12 col-sm-6 col-md-3 first py-5">
@@ -645,13 +675,41 @@
         </div>
     </footer>                                    <!-- start of footer part -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="Aos/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="typed.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script>
-        AOS.init({
-          // delay: 1000,
-          duration: 3000,
-        });
-      </script>
+          $('.img-t').magnificPopup({
+              type:'image',
+            delegate:'a',
+              gallery:{
+                  enabled:true
+              }
+            });
+
+    </script>
+    <script>
+        var mixer = mixitup('.all');
+    </script>
+    <script>
+    $(document).ready(function(){
+	$(window).scroll(function(){
+        if($(this).scrollTop() > 40){
+           $('#topbtn').slideDown(400);
+        }else{
+          $('#topbtn').slideUp(400);
+        }
+     });
+    });
+
+
+    var typed = new Typed('.animate', {
+        strings:["Restaurantly"],
+        typeSpeed: 200,
+        loop:true,
+      });
+    </script>
   </body>
 </html>

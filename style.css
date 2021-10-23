@@ -5,6 +5,25 @@
 body{
     font-family: 'Playfair Display', serif;
 }
+.topbtn{
+    position: fixed;
+    bottom: 0;
+    right: 29px;
+    z-index: 1;
+    padding-bottom: 25px;
+    display: none;
+}
+.topbtn i{
+    color: #fff;
+    font-size: 27px;
+    background: #919190;
+    padding: 16px;
+    border-radius: 50%;
+    transition: .25s all ease-in-out;
+}
+.topbtn i:hover{
+    background: #c4861c;
+}
 .navbar-toggler span i{
     color: white;
     border: 1px solid white;
@@ -208,6 +227,19 @@ header::before{
 
 .menu{                                  /* start of menu list part*/
     background-color: #1A1814;
+}
+.menu_select button{
+    color: white;
+    border: none;
+    background-color: #c4861c;
+    border-radius: 5px 0px 5px 0px;
+}
+.menu_select button:hover{
+    color: white;
+    background-color: #b47404;
+}
+.menu_select button:focus{
+    box-shadow: none;
 }
 .menu h3{
     font-size: 25px;
