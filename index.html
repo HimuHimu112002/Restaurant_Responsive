@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="Aos/aos.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -90,7 +90,7 @@
     <section class="about_heading">
         <div class="container my-5">
             <div class="row text-center">
-                <h1>About our Restaurant</h1>
+                <h1 class="wow bounceInLeft">About our Restaurant</h1>
                 <hr>
             </div>
         </div>
@@ -125,7 +125,7 @@
             <div class="row">
                 <div class="row p-4">
                     <h3>WHY US ..........................................</h3>
-                    <h1>Why Choose Our Restaurant</h1>
+                    <h1 class="wow bounceInRight">Why Choose Our Restaurant</h1>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-7 col-md-6 col-lg-4 m-auto">
@@ -236,8 +236,7 @@
                             <div class="menu_text">
                                 <h3>Tuscan Grilled....................$9.95</h3>
                                 <h4>Grilled chicken with provolone, artichoke hearts, and roasted red pesto</h4>
-                            </div>
-                            
+                            </div>                           
                         </div>
                     </div>
     
@@ -249,8 +248,7 @@
                             <div class="menu_text">
                                 <h3>Mozzarella Stick..................$4.95</h3>
                                 <h4>Lorem, deren, trataro, filede, nerada</h4>
-                            </div>
-                            
+                            </div>                            
                         </div>
                     </div>
     
@@ -262,8 +260,7 @@
                             <div class="menu_text">
                                 <h3>Greek Salad....................$9.95</h3>
                                 <h4>Fresh spinach, crisp romaine, tomatoes, and Greek olives</h4>
-                            </div>
-                            
+                            </div>                           
                         </div>
                     </div>
     
@@ -275,8 +272,7 @@
                             <div class="menu_text">
                                 <h3>Spinach Salad..................$9.95</h3>
                                 <h4>Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</h4>
-                            </div>
-                            
+                            </div>                           
                         </div>
                     </div>
     
@@ -288,8 +284,7 @@
                             <div class="menu_text">
                                 <h3>Lobster Roll....................$12.95</h3>
                                 <h4>Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</h4>
-                            </div>
-                            
+                            </div>                           
                         </div>
                     </div>
     
@@ -315,7 +310,7 @@
         <div class="container pt-2">
             <div class="row special_heading">
                 <h3>SPECIALS</h3>
-                <h1>Check Our Specials</h1>
+                <h1 class="wow bounceInRight">Check Our Specials</h1>
             </div>
 
             <div class="row">
@@ -376,7 +371,7 @@
         <div class="container">
             <div class="row pt-5">
                 <h3>RESERVATION</h3>
-                <h1>Book a Table</h1>
+                <h1 class="wow bounceInRight">Book a Table</h1>
             </div>
             <div class="row input_fild">
                 <div class="col-md-4">
@@ -500,7 +495,7 @@
         <div class="container pt-5">
             <div class="row">
                 <h3>TESTIMONIALS</h3>
-                <h1>What they're saying about us</h1>
+                <h1 class="wow bounceInRight">What they're saying about us</h1>
             </div>
         </div>
         <div class="container pt-5">
@@ -539,7 +534,7 @@
         <div class="container">
             <div class="row pt-3">
                 <h3>CHEFS...........................</h3>
-                <h1>Our Proffesional Chefs</h1>
+                <h1 class="wow bounceInLeft">Our Proffesional Chefs</h1>
             </div>
         </div>
         <div class="container py-3">
@@ -607,7 +602,7 @@
     <section class="contact">                <!-- start of contact part --> 
         <div class="container pt-5">
             <div class="row text-center">
-                <h1> <i class="fas fa-phone-alt"></i> Contact With Us</h1>
+                <h1 class="wow bounceInRight"> <i class="fas fa-phone-alt"></i> Contact With Us</h1>
             </div>
         </div>
         <div class="container">
@@ -711,5 +706,20 @@
         loop:true,
       });
     </script>
+
+<script src="js/wow.min.js"></script>
+<script>
+  wow = new WOW(
+    {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       false,             
+      live:         true        // default
+    }
+  )
+wow.init();
+</script>
+<script src="js/css3-animate-it.js"></script>
   </body>
 </html>
